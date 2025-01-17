@@ -32,7 +32,7 @@ public class FilterTest {
 
         mvc = MockMvcBuilders
                 .webAppContextSetup(applicationContext)
-                .addFilter(new DelegatingFilterProxy(filter), ".*")
+                .addFilter(new DelegatingFilterProxy(filter), "/*")
                 .build();
     }
 
